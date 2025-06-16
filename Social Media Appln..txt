@@ -1,0 +1,13 @@
+Social Media Appln.
+
+1.Login Page
+
+2. Sign up Page
+
+3. Home/Feed page
+
+4. Profile Page
+
+5. Notifications Page
+
+6. Chat Page

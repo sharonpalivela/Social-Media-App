@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friend's Profile</title>
+    <link rel="icon" type="image/png" href="images/favicon.ico.png">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>FlareUp</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="#logout">Logout</a></li>
+            </ul>
+            <a href="profile.html" class="profile-logo">
+                <img src="images/profilepic.jpg" alt="Profile" class="profile-img">
+            </a>
+        </nav>
+    </header>
+
+    <!-- Friend's Profile -->
+    <div class="friend-profile">
+        <!-- Profile Header -->
+        <div class="profile-header">
+            <div class="cover-photo">
+                <img src="images/cover-photo.jpg" alt="Cover Photo">
+            </div>
+            <div class="profile-picture">
+                <img src="images/friends-profile-pic.jpg" alt="Friend's Profile Picture" class="profile-img">
+            </div>
+            <div class="profile-info">
+                <h2>Shirley Angel</h2>
+                <p class="bio">Tech Enthusiast | Traveller | Fitness Freak</p>
+                <p class="location">Location: New York, USA</p>
+                <button class="follow-btn">Follow</button>
+            </div>
+        </div>
+
+        <!-- Friend's Posts -->
+        <div class="friend-posts">
+            <h3>Friend's Posts</h3>
+            <!-- Example Post -->
+            <div class="post">
+                <div class="post-header">
+                    <img src="images/friends-profile-pic.jpg" alt="Profile" class="post-profile-img">
+                    <h3>Shirley Angel</h3>
+                </div>
+                <p>Had an amazing time at the beach today!</p>
+                <img src="images/beach.jpg" alt="Beach" class="post-img">
+                <div class="post-actions">
+                    <button class="like-btn">Like</button>
+                    <button class="comment-btn">Comment</button>
+                </div>
+            </div>
+            <!-- More posts can be added here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

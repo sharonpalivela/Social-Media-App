@@ -1,0 +1,854 @@
+/* General Body Styles for All Pages */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Login and SignUp Styles */
+.login-container, .signup-form {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Hide signup form initially */
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #921515;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.forgot-password {
+    font-size: 0.9rem;
+    color: #921515;
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    text-decoration: none;
+}
+
+.register-text {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.register-text a {
+    color: #921515;
+    text-decoration: none;
+}
+
+.login-link p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.login-link a {
+    color: #921515;
+    text-decoration: none;
+}
+
+/* Styling for the Sign up link */
+.signup-link {
+    color:#921515;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for the Sign up link */
+.signup-link:hover {
+    color: #921515;  /* Darker shade on hover */
+    transform: scale(1.1);  /* Slight zoom effect */
+}
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Header Bar */
+header {
+    background-color: #921515; 
+    color: white;
+    padding: 15px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav .logo h1 {
+    font-size: 1.8rem;
+}
+
+nav ul.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul.nav-links li {
+    margin: 0 15px;
+}
+
+nav ul.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* General reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+/* Header Bar */
+header {
+    background-color: #921515; /* New red color */
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav .logo h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav .nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin: 0 15px;
+}
+
+nav .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav .nav-icons a {
+    margin-left: 15px;
+}
+
+.profile-logo .profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 100px auto 20px;
+    padding: 0 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.sidebar-item a {
+    text-decoration: none;
+    color: #921515; /* New red color */
+    display: block;
+    margin-bottom: 5px;
+}
+
+.sidebar-item ul {
+    list-style-type: none;
+}
+
+.sidebar-item ul li {
+    margin: 5px 0;
+}
+
+.sidebar-item button {
+    background-color: #921515; /* New red color */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sidebar-item button:hover {
+    background-color: #7a1010; /* Slightly darker red for hover */
+}
+
+/* Feed Section */
+.feed {
+    flex: 3;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+/* New Post Section */
+.new-post {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #921515; /* New red color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7a1010; /* Slightly darker red for hover */
+}
+
+/* Posts */
+.posts {
+    margin-top: 20px;
+}
+
+.post {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post h3 {
+    font-size: 1.2rem;
+}
+
+.post p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.post-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.post-actions button {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.post-actions button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .sidebar {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .feed {
+        flex: none;
+    }
+
+    nav .nav-links {
+        display: none;
+    }
+
+    nav .nav-icons {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .profile-logo .profile-img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .sidebar {
+        padding: 10px;
+    }
+
+    .feed {
+        padding: 10px;
+    }
+}
+
+
+
+header .logo h1 {
+    color: #fff;
+    font-size: 24px;
+}
+
+header .nav-links {
+    display: flex;
+    list-style: none;
+}
+
+header .nav-links li {
+    margin: 0 15px;
+}
+
+header .nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .profile-logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Friend's Profile Page */
+.friend-profile {
+    padding: 20px;
+}
+
+/* Profile Header */
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.cover-photo img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.profile-picture {
+    position: relative;
+    top: -100px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.profile-info h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.profile-info .bio {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.profile-info .location {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.follow-btn {
+    padding: 8px 16px;
+    background-color: #921515;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Friend's Posts */
+.friend-posts h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.post {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post h3 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.post p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.post-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.like-btn, .comment-btn {
+    padding: 8px 16px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.like-btn:hover, .comment-btn:hover {
+    background-color: #ccc;
+}
+
+.profile-header {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.cover-photo img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border: 4px solid #fff;
+}
+
+.profile-details h2 {
+    margin: 0;
+}
+
+.profile-nav {
+    background-color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.profile-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile-nav li {
+    margin: 0 15px;
+}
+
+.profile-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.profile-section {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #921515;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #7a0e0e;
+}
+
+.friends-list {
+    list-style: none;
+    padding: 0;
+}
+
+.friends-list li {
+    margin: 10px 0;
+}
+
+.friends-list a {
+    text-decoration: none;
+    color: #921515;
+    font-weight: bold;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.new-post {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.new-post textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.post-feed {
+    margin-top: 20px;
+}
+
+.post {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+}
+
+.post-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post h4 {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+header .logo h1 {
+    margin-left: 20px;
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+header .nav-links li {
+    margin-left: 20px;
+}
+
+header .nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.notifications-feed {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.notification {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.notification:last-child {
+    border-bottom: none;
+}
+
+.timestamp {
+    font-size: 0.9em;
+    color: #888;
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Container for the split layout */
+.chat-container {
+    display: flex;
+    width: 80%;
+    height: 80vh;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Sidebar: Contacts List */
+.contacts-list {
+    width: 30%;
+    background-color: #ffffff;
+    border-right: 2px solid #ddd;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.contacts-list h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contacts-list ul {
+    list-style: none;
+}
+
+.contacts-list li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contacts-list li:hover {
+    background-color: #eee;
+}
+
+/* Right Side: Chat Window */
+.chat-window {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.chat-header {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.chat-box {
+    flex-grow: 1;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.message-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.message-input textarea {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+.message-input button {
+    padding: 10px 20px;
+    background-color: #4267B2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.message-input button:hover {
+    background-color: #365899;
+}
+.notification {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+

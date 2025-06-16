@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - FlareUp</title>
+    <link rel="icon" type="image/png" href="images/favicon.ico.png">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Login Container -->
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm" method="POST">
+            <div class="input-group">
+                <input type="text" id="emailOrPhone" name="emailOrPhone" placeholder="Phone number, username, or email" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div> 
+            <button type="submit" class="login-btn">Login</button>
+            <div class="forgot-password">
+                <a href="#">Forgot your password?</a>
+            </div>
+            <p class="register-text">Don't have an account? <a href="signup.html">Sign up</a></p>
+        </form>
+    </div>
+    
+    <!-- Link to script.js -->
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

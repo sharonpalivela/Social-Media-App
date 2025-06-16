@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - FlareUp</title>
+    <link rel="icon" type="image/png" href="images/favicon.ico.png">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>FlareUp</h1>
+            </div> 
+            <ul class="nav-links">
+                <li><a href="/homepage.html">Home</a></li>
+                <li><a href="/notifications.html">Notifications</a></li>
+                <li><a href="/chat.html">Chats</a></li>
+                <li><a href="/login.html">Logout</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="myprofile.html" class="profile-logo">
+                    <img src="images/profilepic.jpg" alt="Profile" class="profile-img">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-item">
+                <h3>Your Profile</h3>
+                <a href="#profile">View Profile</a>
+            </div>
+            <div class="sidebar-item">
+                <h3>Friend Requests</h3>
+                <ul>
+                    <li><a href="#">John Doe</a> <button class="accept-btn">Accept</button> <button class="decline-btn">Decline</button></li>
+                    <li><a href="#">Jane Smith</a> <button class="accept-btn">Accept</button> <button class="decline-btn">Decline</button></li>
+                    <!-- More friend requests can be added here -->
+                </ul>
+            </div>
+            <div class="sidebar-item">
+                <h3>Friends</h3>
+                <ul>
+                    <li><a href="#">Shirley Angel</a></li>
+                    <li><a href="#">Jesse Paul</a></li>
+                    <!-- More friends can be listed here -->
+                </ul>
+            </div>
+            <div class="sidebar-item">
+                <h3>Groups</h3>
+                <ul>
+                    <li><a href="#">Tech Enthusiasts</a></li>
+                    <li><a href="#">Fitness Fanatics</a></li>
+                    <!-- More groups can be listed here -->
+                </ul>
+            </div>
+            <div class="sidebar-item">
+                <h3>Pages</h3>
+                <ul>
+                    <li><a href="#">Tech Blog</a></li>
+                    <li><a href="#">Fitness Guru</a></li>
+                    <!-- More pages can be listed here -->
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Feed Section -->
+        <section class="feed">
+            <!-- New Post Section -->
+            <div class="new-post">
+                <textarea id="new-post" placeholder="What's on your mind?"></textarea>
+                <button onclick="submitPost()">Post</button>
+            </div>
+
+            <!-- Posts Feed -->
+            <div class="posts">
+                <!-- Example Post -->
+                <div class="post">
+                    <div class="post-header">
+                        <img src="images/profilepic.jpg" alt="Profile" class="post-profile-img">
+                        <h3>Pushpa Sharon Palivela</h3>
+                    </div>
+                    <p>Daughter of the King of Kings!</p>
+                    <div class="post-actions">
+                        <button class="like-btn">Like</button>
+                        <button class="comment-btn">Comment</button>
+                        <button class="share-btn">Share</button>
+                    </div>
+                </div>
+                <!-- More posts can be added here -->
+            </div>
+        </section>
+    </div>
+    <div class="sidebar-item">
+        <h3>Friends</h3>
+        <ul>
+            <li><a href="profilepage.html">Shirley Angel</a></li>
+            <li><a href="profilepage.html">Pauline</a></li>
+            <!-- More friends can be listed here -->
+        </ul>
+    </div>
+
+    
+    <script src="./script.js"></script>
+</body>
+</html>

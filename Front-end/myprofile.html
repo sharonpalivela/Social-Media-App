@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharon Palivela's Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="profile-header">
+            <div class="cover-photo">
+                <img src="images/cover-photo.jpg" alt="Cover Photo">
+            </div>
+            <div class="profile-info">
+                <img src="images/profilepic.jpg" alt="Profile Picture" class="profile-pic">
+                <div class="profile-details">
+                    <h2>Sharon Palivela</h2>
+                    <p>@sharonpalivela | New York, USA</p>
+                    <p>Bio: Tech Enthusiast | Traveller | Fitness Freak</p>
+                </div>
+                <button class="edit-profile-btn">Edit Profile</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Profile Navigation -->
+    <nav class="profile-nav">
+        <ul>
+            <li><a href="#posts">Posts</a></li>
+            <li><a href="#friends">Friends</a></li>
+            <li><a href="#photos">Photos</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Profile Content -->
+    <main>
+        <!-- Posts Section -->
+        <section id="posts" class="profile-section">
+            <h3>Recent Posts</h3>
+            <div class="new-post">
+                <textarea id="new-post" placeholder="What's on your mind?"></textarea>
+                <button onclick="postMessage()">Post</button>
+            </div>
+            <div class="post-feed">
+                <!-- Example Post -->
+                <div class="post">
+                    <div class="post-header">
+                        <img src="images/profilepic.jpg" alt="Profile" class="post-pic">
+                        <h4>Sharon Palivela</h4>
+                    </div>
+                    <p>Had an amazing time hiking today!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Friends Section -->
+        <section id="friends" class="profile-section">
+            <h3>Friends</h3>
+            <ul class="friends-list">
+                <li><a href="#">Jesse Paul</a></li>
+                <li><a href="#">Madiwada Raj</a></li>
+                <!-- More friends can be listed here -->
+            </ul>
+        </section>
+
+        <!-- Photos Section -->
+        <section id="photos" class="profile-section">
+            <h3>Photo Gallery</h3>
+            <div class="photo-gallery">
+                <img src="images/photo1.jpg" alt="Photo 1">
+                <img src="images/photo2.jpg" alt="Photo 2">
+                <!-- More photos can be added here -->
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="profile-section">
+            <h3>About</h3>
+            <p>Here you can add more information about Sharon.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
