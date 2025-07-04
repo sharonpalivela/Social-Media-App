@@ -2,19 +2,32 @@ const jwt = require("jsonwebtoken");
 const User = require("../models/User.model");
 
 const authMiddleware = async (req, res, next) => {
-    try {
-        const token = req.header("Authorization");
+  try {
+    const authHeader = req.headers.authorization;
 
-        if (!token) {
-            return res.status(401).json({ error: "Access denied, token missing!" });
-        }
+    console.log("👉 Received Authorization Header:", authHeader);
+    console.log("👉 JWT_SECRET from env:", process.env.JWT_SECRET);
 
-        const decoded = jwt.verify(token, process.env.JWT_SECRET);
-        req.user = await User.findById(decoded.id).select("-password"); // Attach user data to req.user
-        next();
-    } catch (err) {
-        res.status(401).json({ error: "Invalid or expired token!" });
+    if (!authHeader || !authHeader.startsWith("Bearer ")) {
+      console.log("❌ Token missing or malformed");
+      return res.status(401).json({ error: "Access denied, token missing or malformed!" });
     }
+
+    const token = authHeader.split(" ")[1]; // ✅ Extract token only
+
+    console.log("✅ Extracted Token:", token);
+
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    console.log("✅ Token decoded:", decoded);
+
+    req.user = await User.findById(decoded.id).select("-password");
+    console.log("✅ User authenticated:", req.user.username);
+
+    next();
+  } catch (err) {
+    console.error("❌ JWT verification failed:", err.message);
+    res.status(401).json({ error: "Invalid or expired token!" });
+  }
 };
 
 module.exports = authMiddleware;
